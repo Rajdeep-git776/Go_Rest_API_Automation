@@ -14,7 +14,7 @@ import java.util.List;
 import static io.restassured.RestAssured.given;
 
 public class GetAllUsers  extends BaseTest {
-    @Test
+    @Test(description = "Gets all the users")
     public void validateGetAllUsers(){
 
         Response response  =given().contentType(ContentType.JSON).when().get("/public/v2/users");
