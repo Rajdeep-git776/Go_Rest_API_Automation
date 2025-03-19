@@ -35,7 +35,7 @@ public class CreateUser extends BaseTest {
 
     }
 
-    @Test(description = "validateCreateUserWithoutAuthToken Test case")
+    @Test(description = "Validates user creation without Auth Token")
     public void validateCreateUserWithoutAuthToken(){
         UserPayload payload = new UserPayload();
         payload.setName("Alder Silver");
