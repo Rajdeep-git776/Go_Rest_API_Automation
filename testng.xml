@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="API Automation Users Api's" parallel="classes" thread-count="2">
+    <test name="API Users TestCases">
+        <classes>
+            <class name="com.gorest.users.tests.GetAllUsers"></class>
+            <class name="com.gorest.users.tests.CreateUser"></class>
+        </classes>
+    </test>
+</suite>
