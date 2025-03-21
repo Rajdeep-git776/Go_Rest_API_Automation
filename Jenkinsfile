@@ -1,14 +1,6 @@
 pipeline {
     agent any
 
-    tools {
-        maven 'Maven 3'  // Ensure Maven is installed on your Jenkins instance
-    }
-
-    environment {
-        JAVA_HOME = tool 'JDK 11' // Ensure Java 11 is installed and configured
-    }
-
     stages {
         stage('Checkout Code') {
             steps {
